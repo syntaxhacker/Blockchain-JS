@@ -1,0 +1,9 @@
+{
+  "main": "index.js",
+  "dependencies": {
+    "sha256": "0.2.0",
+    "express": "4.16.3",
+    "body-parser": "1.18.3",
+    "uuid": "3.3.2"
+  }
+}
