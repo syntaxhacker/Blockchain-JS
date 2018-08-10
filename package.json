@@ -1,9 +1,18 @@
 {
-  "main": "index.js",
+  "main": "src/blockchain.js",
   "dependencies": {
-    "sha256": "0.2.0",
-    "express": "4.16.3",
     "body-parser": "1.18.3",
+    "express": "4.16.3",
+    "nodemon": "^1.18.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "sha256": "0.2.0",
     "uuid": "3.3.2"
+  },
+  "scripts": {
+    "node_1": "nodemon  ./src/networkNode.js 3001 http://localhost:3001",
+    "node_2": "nodemon  ./src/networkNode.js 3002 http://localhost:3002",
+    "node_3": "nodemon  ./src/networkNode.js 3003 http://localhost:3003",
+    "node_4": "nodemon  ./src/networkNode.js 3004 http://localhost:3004"
   }
 }
